@@ -1,3 +1,4 @@
+import { Icon } from "@/components/Icon";
 import { Apple, ChevronDown } from "lucide-react";
 
 interface CategoriaItemProps{
@@ -12,7 +13,7 @@ export function CategoriaItem(props:CategoriaItemProps){
     return(
         <div className="flex justify-between">
           <div className="flex gap-2">
-            <Apple />
+            <Icon name="Apple"/>
             <span>{categoria.nome}</span>
           </div>
           <ChevronDown />
